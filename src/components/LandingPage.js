@@ -32,7 +32,7 @@ export default function LandingPage() {
 
 function Header() {
     return (
-        <header className="py-3 px-4 md:px-6 lg:px-8 bg-transparent backdrop-blur-md transition-colors duration-300 sticky top-0 z-50">
+        <header className="py-3 px-4 md:px-6 lg:px-8 bg-black bg-transparent backdrop-blur-md transition-colors duration-300 sticky top-0 z-50">
             <nav className="flex justify-between items-center max-w-7xl mx-auto">
                 <a href="/" className="text-2xl font-bold text-white">Evalia</a>
                 <ul className="flex space-x-6">
@@ -41,7 +41,7 @@ function Header() {
                     <li><a href="#testimonials" className="text-gray-300 hover:text-teal-400 transition-all duration-300">Testimonials</a></li>
                     <li><a href="#faq" className="text-gray-300 hover:text-teal-400 transition-all duration-300">FAQ</a></li>
                 </ul>
-                <Link href={"login"} className="px-4 py-2 bg-transparent border border-teal-400 text-teal-400 rounded-full hover:bg-teal-400 hover:text-white transition-all duration-300">
+                <Link href={"login"} className="px-4 py-2 bg-transparent border border-teal-400 text-teal-400 rounded-full hover:bg-teal-400 hover:text-white transition-all duration-100">
                     Login
                 </Link>
             </nav>
@@ -63,7 +63,7 @@ function HeroSection() {
                         Unlock the Power of AI in Hiring
                     </motion.h1>
                     <motion.p
-                        className="text-xl md:text-2xl mb-8 text-gray-200"
+                        className="text-xl font-semibold md:text-2xl mb-8 text-gray-200"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
@@ -87,7 +87,8 @@ function HeroSection() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.6 }}
                         >
-                            Get Started
+
+                            <Link href={'/signup'}>Get Started</Link>
                         </motion.button>
                         <motion.button
                             className="px-8 py-4 bg-transparent border-2 border-gray-300 rounded-full text-lg font-semibold text-white shadow-lg hover:bg-white hover:text-blue-800 transition-all duration-300"
@@ -97,7 +98,8 @@ function HeroSection() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.8 }}
                         >
-                            Login
+                            <Link href={'/login'}>Login</Link>
+
                         </motion.button>
                     </div>
                 </div>
