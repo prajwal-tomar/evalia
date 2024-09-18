@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Evalia - AI-Powered Hiring Solutions",
+  title: "Evalia",
   description: "Unlock the power of AI in hiring with Evalia. Effortlessly evaluate resumes and streamline candidate management with AI-driven insights.",
 };
 
