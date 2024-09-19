@@ -75,11 +75,11 @@ export default function DashboardLayout({ children, user }) {
                             </button>
                             <div className="relative">
                                 <button className="flex items-center space-x-2 bg-white rounded-full py-1 px-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                    <img
+                                    {/* <img
                                         className="h-8 w-8 rounded-full"
                                         src={`https://ui-avatars.com/api/?name=${user?.full_name || 'User'}&background=random`}
                                         alt="User avatar"
-                                    />
+                                    /> */}
                                     <span className="text-sm font-medium text-gray-700">{user?.full_name || 'User'}</span>
                                 </button>
                             </div>
@@ -89,7 +89,7 @@ export default function DashboardLayout({ children, user }) {
 
                 {/* Page content */}
                 <main className="flex-1 overflow-x-hidden overflow-y-auto bg-blue-50">
-                    <div className="container mx-auto px-6 py-8">
+                    <div>
                         {children}
                     </div>
                 </main>

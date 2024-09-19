@@ -1,4 +1,5 @@
 import "./globals.css";
+import LayoutWrapper from '../components/LayoutWrapper';
 
 export const metadata = {
   title: "Evalia",
@@ -9,7 +10,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {children}
+        <LayoutWrapper>
+          {children}
+        </LayoutWrapper>
       </body>
     </html>
   );
