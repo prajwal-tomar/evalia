@@ -110,17 +110,17 @@ export default function FuturisticPipeline() {
     const [hoveredStep, setHoveredStep] = useState(null)
 
     return (
-        <div className="bg-gray-900 p-8 font-sans">
+        <div className="bg-gray-900 p-8 font-sans py-24">
             <div className="max-w-7xl mx-auto">
                 <motion.h1
-                    className="text-4xl font-bold text-center mb-12 text-blue-400 tracking-wider"
+                    className="text-4xl md:text-5xl  font-bold text-center mb-16 text-white tracking-wider"
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                 >
-                    AI-Powered Recruitment Pipeline
+                    AI-Powered Recruitment Ecosystem
                 </motion.h1>
-                <div className="relative mb-24">
+                <div className="relative mb-10">
                     <div className="flex justify-between relative z-10">
                         {steps.map((step, index) => (
                             <div key={index} className="relative">
@@ -192,7 +192,7 @@ export default function FuturisticPipeline() {
                             transition={{ duration: 1.5, ease: "easeInOut" }}
                         />
                     </div> */}
-                    <ProgressBar />
+                    {/* <ProgressBar /> */}
                 </div>
             </div>
         </div>

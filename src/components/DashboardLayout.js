@@ -22,11 +22,11 @@ export default function DashboardLayout({ children, user }) {
         <div className="flex h-screen bg-blue-50 overflow-hidden">
             {/* Sidebar */}
             <aside
-                className={`bg-gradient-to-b from-blue-800 to-teal-700 text-white w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
+                className={`bg-gray-900 text-white w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
                     } md:relative md:translate-x-0 transition duration-200 ease-in-out z-30`}
             >
                 <div className="flex items-center justify-between px-4">
-                    <span className="text-2xl font-semibold">Evalia</span>
+                    <span className="text-2xl font-semibold">Hirescan</span>
                     <button onClick={toggleSidebar} className="md:hidden">
                         <X size={24} />
                     </button>
@@ -75,11 +75,11 @@ export default function DashboardLayout({ children, user }) {
                             </button>
                             <div className="relative">
                                 <button className="flex items-center space-x-2 bg-white rounded-full py-1 px-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 shadow-sm hover:shadow-md transition-shadow duration-200">
-                                    {/* <img
+                                    <img
                                         className="h-8 w-8 rounded-full"
                                         src={`https://ui-avatars.com/api/?name=${user?.full_name || 'User'}&background=random`}
                                         alt="User avatar"
-                                    /> */}
+                                    />
                                     <span className="text-sm font-medium text-gray-700">{user?.full_name || 'User'}</span>
                                 </button>
                             </div>
@@ -88,7 +88,7 @@ export default function DashboardLayout({ children, user }) {
                 </header>
 
                 {/* Page content */}
-                <main className="flex-1 overflow-x-hidden overflow-y-auto bg-blue-50">
+                <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gradient-to-r bg-50">
                     <div>
                         {children}
                     </div>
